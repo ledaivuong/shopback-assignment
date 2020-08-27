@@ -18,6 +18,7 @@
 12. If top up fails because the network is so slow or it cannot get response from API, it should display the error message below "TOP UP" button: "Cannot retrieve data, please try again"
 
 ### Test cases:
+***The table below is quite large, you need to scroll it horizontal to view all***
 
 <table>
 	<tbody>
@@ -298,3 +299,61 @@
 		</tr>
 	</tbody>
 </table>
+
+## Question-2: Automation Test Script
+***The Amazon site has several ways to prevent bot crawl(include this automation script) so when you try to run these scripts maybe it will get failed sometime***
+
+### Test cases:
+This sample project is using BDD so I think the feature file can describle its self clearly
+
+### Technique
+- WebdriverIO Framework
+- Cucumber BDD
+- Page Object Design Partern
+- Allure Report
+
+### Prepare Environtment
+1. Download and Install Node: https://nodejs.org/en/
+2. Download and Install JavaSDK: https://www.oracle.com/technetwork/java/javase/downloads/jdk13-downloads-5672538.html
+3. Config JAVA_HOME path environtment
+4. Install Cucumber Full Support: https://marketplace.visualstudio.com/items?itemName=alexkrechik.cucumberautocomplete
+
+### Install Dependencies
+```
+git clone https://github.com/ledaivuong/shopee-sample-project.git
+cd shopee-sample-project
+npm install
+```
+
+### Structure
+- **.vscode/settings.json**
+  - To configure the cucumber snippet which is used by Cucumber Full Support
+  
+- **tests/features**
+  - Definition of the BDD scenarios
+  
+- **tests/pageObjects**
+  - Definition of Page Objects
+  
+- **tests/stepDefinitions**
+  - Definition of Step Definition
+- **wdio.conf.js**
+  - Runing file of WebdriverIO framework
+ 
+
+### Run test
+**Run all tests**
+```
+npm run test
+```
+
+**Run specific test**
+```
+npm run executeCucumber -- --cucumberOpts.tagExpression='@TC5'
+```
+
+### Generate HTML report
+```
+npm run htmlReport
+```
+
