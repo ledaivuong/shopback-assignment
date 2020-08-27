@@ -1,3 +1,4 @@
+
 # shopback-assignment
 
 ## Question-1: Manual Test cases
@@ -16,6 +17,78 @@
 11. If top up fails because the network is so slow or it cannot get response from API, it should display the error message below "TOP UP" button: "Cannot retrieve data, please try again"
 
 ### Test cases:
-| Test case ID | Priority | Test Scenario | Test Steps | Test Data | Expected Results | Actual Results | Pass/Fail | Automate |
-| :---         | :---     | :---          | :---       | :---      | :---             | :---           | :---:     | :---:    |
-| TP001        | High     | Verify that top up successfully with valid data | <ol><li>Input the valid PIN code</li><li>Input the valid phone number</li><li>Click on TOP UP button</li></ol>| <ul><li>PIN code = 123456789123</li><li>Phone number = 0123456789</li></ul> | <ol><li>BE triggers to top up the amount of phone card to the inputted number</li><li>Successful message should be displayed</li></ol> | - [ x ] hello|
+
+| Test case ID | Priority | Test Scenario | Test Steps &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;           | Test Data | Expected Results | Actual Results | Pass/Fail | Automate 
+| :---         | :---     | :---          | :---       | :---      | :---             | :---           | :---:     | :---:    
+| TP001        | High     | Verify that top up successfully with valid data | <ol><li>Input the valid PIN code</li><li>Input the valid phone number</li><li>Click on TOP UP button</li></ol>| <ul><li>PIN code = 123456789123</li><li>Phone number = 0123456789</li></ul> | <ol><li>BE triggers to top up the amount of phone card to the inputted number</li><li>Successful message should be displayed</li></ol> |  |  | <ul><li>- [x] </li></ul> 
+
+<table>
+	<tbody>
+		<tr>
+			<th>Test case ID</th>
+			<th>Priority</th>
+			<th>Test Scenario</th>
+			<th>Test Steps</th>
+			<th>Test Data</th>
+			<th>Expected Results</th>
+			<th>Actual Results</th>
+			<th>Automated</th>
+		</tr>
+		<tr>
+			<td>TP001</td>
+			<td>High</td>
+			<td>Verify that top up successfully with valid data</td>
+			<td>
+				<ol>
+					<li>Input the valid PIN code</li>
+					<li>Input the valid phone number</li>
+					<li>Click on TOP UP button</li>
+				</ol>
+			</td>
+			<td>
+				<ul>
+					<li>PIN code = 123456789123</li>
+					<li>Phone number = 0123456789</li>
+				</ul>
+			</td>
+			<td>
+				<ol>
+					<li>BE triggers to top up the amount of phone card to the inputted number</li>
+					<li>A successful message should be displayed</li>
+				</ol>
+			</td>
+			<td>&nbsp;</td>
+			<td>&nbsp;</td>
+		</tr>
+		<tr>
+			<td>&nbsp;</td>
+			<td>&nbsp;</td>
+			<td>&nbsp;</td>
+			<td>&nbsp;</td>
+			<td>&nbsp;</td>
+			<td>&nbsp;</td>
+			<td>&nbsp;</td>
+			<td>&nbsp;</td>
+		</tr>
+		<tr>
+			<td>&nbsp;</td>
+			<td>&nbsp;</td>
+			<td>&nbsp;</td>
+			<td>&nbsp;</td>
+			<td>&nbsp;</td>
+			<td>&nbsp;</td>
+			<td>&nbsp;</td>
+			<td>&nbsp;</td>
+		</tr>
+		<tr>
+			<td>&nbsp;</td>
+			<td>&nbsp;</td>
+			<td>&nbsp;</td>
+			<td>&nbsp;</td>
+			<td>&nbsp;</td>
+			<td>&nbsp;</td>
+			<td>&nbsp;</td>
+			<td>&nbsp;</td>
+		</tr>
+	</tbody>
+</table>
