@@ -303,6 +303,8 @@
 ## Question-2: Automation Test Script
 ***The Amazon site has several ways to prevent bot crawl(include this automation script) so when you try to run these scripts maybe it will get failed sometime***
 
+***Please update the data in tests/features/... (parameters: please-input-your-email, please-input-your-password) with your personal data***
+
 ### Test cases:
 This sample project is using BDD so I think the feature file can describle its self clearly
 
