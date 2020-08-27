@@ -322,8 +322,8 @@ This sample project is using BDD so I think the feature file can describle its s
 
 ### Install Dependencies
 ```
-git clone https://github.com/ledaivuong/shopee-sample-project.git
-cd shopee-sample-project
+git clone https://github.com/ledaivuong/shopback-assignment.git
+cd shopback-assignment
 npm install
 ```
 
