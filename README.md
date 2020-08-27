@@ -39,7 +39,7 @@
 				<ol>
 					<li>Input the valid PIN code</li>
 					<li>Input the valid phone number</li>
-					<li>Click on TOP UP button</li>
+					<li>Tap on TOP UP button</li>
 				</ol>
 			</td>
 			<td>
@@ -57,7 +57,7 @@
 			<td>&nbsp;</td>
 			<td>
 				<ul>
-					<li>- [x]</li>
+					<li> - [x] </li>
 				</ul>
 			</td>
 		</tr>
@@ -95,7 +95,7 @@
 				<ol>
 					<li>Input the valid PIN code</li>
 					<li>Input the valid phone number</li>
-					<li>Click on TOP UP button</li>
+					<li>Tap on TOP UP button</li>
 					<li>Retry all steps above</li>
 				</ol>
 			</td>
@@ -109,7 +109,7 @@
 			<td>&nbsp;</td>
 			<td>&nbsp;
 				<ul>
-					<li>- [x]</li>
+					<li> - [x] </li>
 				</ul>
 			</td>
 		</tr>
@@ -121,7 +121,7 @@
 				<ol>
 					<li>Input the valid PIN code</li>
 					<li>Input the valid phone number</li>
-					<li>Click on TOP UP button</li>
+					<li>Tap on TOP UP button</li>
 					<li>Shutdown the network&nbsp;immediately</li>
 					<li>Retry steps 1, 2, 3</li>
 				</ol>
@@ -141,7 +141,7 @@
 			<td>&nbsp;</td>
 			<td>
 				<ul>
-					<li>- [x]</li>
+					<li> - [x] </li>
 				</ul>
 			</td>
 		</tr>
@@ -153,7 +153,7 @@
 				<ol>
 					<li>Input the <strong>invalid</strong> PIN code</li>
 					<li>Input the valid phone number</li>
-					<li>Click on TOP UP button</li>
+					<li>Tap on TOP UP button</li>
 					<li>Retry all steps 6 times</li>
 				</ol>
 			</td>
@@ -172,7 +172,7 @@
 			<td>&nbsp;</td>
 			<td>
 				<ul>
-					<li>- [x]</li>
+					<li> - [x] </li>
 				</ul>
 			</td>
 		</tr>
@@ -191,7 +191,7 @@
 			<td>&nbsp;</td>
 			<td>
 				<ul>
-					<li>- [x]</li>
+					<li> - [x] </li>
 				</ul>
 			</td>
 		</tr>
@@ -205,7 +205,7 @@
 			<td>&nbsp;</td>
 			<td>
 				<ul>
-					<li>- [x]</li>
+					<li> - [x] </li>
 				</ul>
 			</td>
 		</tr>
@@ -220,21 +220,79 @@
 				</ol>
 			</td>
 			<td>&nbsp;</td>
-			<td>&nbsp;Only number keyboard is displayed when user tap on PIN code and phone number field</td>
+			<td>Only number keyboard is displayed when user tap on PIN code and phone number field</td>
 			<td>&nbsp;</td>
 			<td>&nbsp;
 				<ul>
-					<li>- [x]</li>
+					<li> - [x] </li>
 				</ul>
 			</td>
 		</tr>
 		<tr>
+			<td>&nbsp;TP009</td>
+			<td>Normal</td>
+			<td>Verify that error message displays when the user inputs an invalid PIN code</td>
+			<td>&nbsp;
+				<ol>
+					<li>Input the <strong>invalid</strong> PIN code</li>
+					<li>Input the valid phone number</li>
+					<li>Tap on TOP UP button</li>
+				</ol>
+			</td>
+			<td>&nbsp;
+				<ul>
+					<li>PIN code =&nbsp;111111111111</li>
+					<li>Phone number = 0123456789</li>
+				</ul>
+			</td>
+			<td>An error message should be displayed below PIN code field: "Invalid PIN code"</td>
 			<td>&nbsp;</td>
 			<td>&nbsp;</td>
+		</tr>
+		<tr>
+			<td>TP010</td>
+			<td>Normal</td>
+			<td>Verify that error message displayed when the user inputs an invalid phone number</td>
+			<td>
+				<ol>
+					<li>Input the&nbsp;valid&nbsp;PIN code</li>
+					<li>Input the <strong>invalid</strong> phone number</li>
+					<li>Tap on TOP UP button</li>
+				</ol>
+			</td>
+			<td>
+				<ul>
+					<li>PIN code =&nbsp;123456789123</li>
+					<li>Phone number =&nbsp;1111111111</li>
+				</ul>
+			</td>
+			<td>An error message should be displayed below phone number field: "Invalid phone number"</td>
 			<td>&nbsp;</td>
-			<td>&nbsp;</td>
-			<td>&nbsp;</td>
-			<td>&nbsp;</td>
+			<td>
+				<ul>
+					<li> - [ ] </li>
+				</ul>
+			</td>
+		</tr>
+		<tr>
+			<td>TP011</td>
+			<td>Low</td>
+			<td>Verify that error message displayed when the application cannot get the API response</td>
+			<td>
+				<ol>
+					<li>Input the&nbsp;valid&nbsp;PIN code</li>
+					<li>Input the&nbsp;valid&nbsp;phone number</li>
+					<li>Tap on TOP UP button</li>
+					<li>Shutdown the network immediately</li>
+				</ol>
+			</td>
+			<td>
+				<ul>
+					<li>PIN code =&nbsp;123456789123</li>
+					<li>Phone number =&nbsp;0123456789</li>
+				</ul>
+			</td>
+			<td>An error message should be displayed below "TOP UP" button: "Cannot retrieve data, please try again"</td>
 			<td>&nbsp;</td>
 			<td>&nbsp;</td>
 		</tr>
